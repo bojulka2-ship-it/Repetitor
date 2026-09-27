@@ -4,3 +4,4 @@ logs/*.log
 logs/rate-limit.json
 site/
 node_modules/
+Drafts/
