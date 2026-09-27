@@ -282,9 +282,44 @@ a:hover { color: var(--color-accent-dark); }
   color: var(--color-primary);
 }
 
-.hero-figure img {
+.hero-figure {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  order: -1;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: var(--radius-lg);
-  width: 100%;
+  padding: var(--space-3);
+}
+
+.hero-figure img {
+  width: 88px;
+  height: 88px;
+  flex: 0 0 88px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.hero-teacher {
+  margin: 0;
+  min-width: 0;
+}
+
+.hero-teacher-name {
+  margin: 0 0 var(--space-1);
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.hero-teacher-desc {
+  margin: 0;
+  font-size: var(--font-small);
+  line-height: 1.45;
+  color: #dbe4ef;
 }
 
 /* --- Секции --- */
@@ -737,6 +772,25 @@ a:hover { color: var(--color-accent-dark); }
     grid-template-columns: 1.2fr 1fr;
     align-items: center;
   }
+
+  .hero-figure {
+    order: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-4);
+    padding: var(--space-5);
+  }
+
+  .hero-figure img {
+    width: 160px;
+    height: 160px;
+    flex: none;
+    align-self: center;
+  }
+
+  .hero-teacher-name { font-size: 1.15rem; text-align: center; align-self: stretch; }
+
+  .hero-teacher-desc { text-align: center; }
 
   .about-grid {
     grid-template-columns: 2fr 3fr;
