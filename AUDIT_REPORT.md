@@ -3,7 +3,7 @@
 Дата аудита: 2026-09-22 (read-only) · волна исправлений: 2026-09-22  
 Объект: `D:\123Free\les2\Z5` (PHP-форма `send.php`, статика `site/`, автотесты `tests/run_tests.php`)  
 Режим: аудит read-only → исправления по решениям заказчика; git-репозиторий инициализирован (initial commit `a195ea4`).  
-Демо Pages: https://bojulka2-ship-it.github.io/landing-anna-volkova/ · CI/Deploy success · последний коммит `8dbc794`.
+Демо Pages: https://bojulka2-ship-it.github.io/Repetitor/ · CI/Deploy success · последний коммит `8dbc794`.
 
 ## Сводная таблица находок
 

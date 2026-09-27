@@ -3,7 +3,7 @@
 Продающая одностраничная форма для частного репетитора: Москва (офлайн) и онлайн.  
 Статический сайт + PHP-форма заявок, согласие на обработку персональных данных (152-ФЗ), демо-режим на GitHub Pages.
 
-**Демо (интерфейс, заявки не уходят):** https://bojulka2-ship-it.github.io/landing-anna-volkova/
+**Демо (интерфейс, заявки не уходят):** https://bojulka2-ship-it.github.io/Repetitor/
 
 Этот README — инструкция для человека, который **впервые** открыл репозиторий: что это, как запустить у себя, как настроить, как выложить на боевой домен в России.
 
@@ -87,7 +87,7 @@
 ## Структура проекта и файлов
 
 ```
-landing-anna-volkova/
+Repetitor/
 ├── index.html                 # лендинг + форма
 ├── policy.html                # политика обработки ПДн (152-ФЗ)
 ├── zayavka.html               # пример письма менеджеру (для демо)
@@ -153,8 +153,8 @@ landing-anna-volkova/
 ### 1. Клонирование
 
 ```bash
-git clone https://github.com/bojulka2-ship-it/landing-anna-volkova.git
-cd landing-anna-volkova
+git clone https://github.com/bojulka2-ship-it/Repetitor.git
+cd Repetitor
 ```
 
 ### 2. Проверка, что PHP и Node на месте
@@ -395,7 +395,7 @@ npm run scan:pii
 9. `policy.html` открывается в новой вкладке, содержит текст 152-ФЗ.
 10. **Демо НЕ принимает заявки** — предупредить заказчика: это витрина интерфейса.
 11. `https://…github.io/…/logs/submissions.log` и `…/config/managers.php` → **404** (файлов нет в публикации).
-12. Демо-ссылка: https://bojulka2-ship-it.github.io/landing-anna-volkova/
+12. Демо-ссылка: https://bojulka2-ship-it.github.io/Repetitor/
 
 Локально реальную отправку (в режиме test) проверяйте через `php -S 127.0.0.1:8080` и `logs/submissions.log`.
 
@@ -527,7 +527,7 @@ tar -czf backup-site-$(date +%F).tar.gz send.php config logs index.html policy.h
 Локально (копия репозитория + секреты):
 
 ```bash
-git clone https://github.com/bojulka2-ship-it/landing-anna-volkova.git backup-landing-$(date +%F)
+git clone https://github.com/bojulka2-ship-it/Repetitor.git backup-landing-$(date +%F)
 ```
 
 `managers.local.php` в git не входит — храните его отдельно в безопасном месте (менеджер паролей, зашифрованный архив).
@@ -615,4 +615,4 @@ git pull origin master
 git push origin master
 ```
 
-**Приёмка:** `ACCEPTANCE_CHECKLIST.md` · **Аудит:** `AUDIT_REPORT.md` · **Демо:** https://bojulka2-ship-it.github.io/landing-anna-volkova/
+**Приёмка:** `ACCEPTANCE_CHECKLIST.md` · **Аудит:** `AUDIT_REPORT.md` · **Демо:** https://bojulka2-ship-it.github.io/Repetitor/

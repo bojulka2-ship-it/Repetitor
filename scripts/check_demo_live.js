@@ -8,7 +8,7 @@ const puppeteer = require('puppeteer-core');
   });
   const p = await b.newPage();
   await p.setViewport({ width: 375, height: 812 });
-  await p.goto('https://bojulka2-ship-it.github.io/landing-anna-volkova/', {
+  await p.goto('https://bojulka2-ship-it.github.io/Repetitor/', {
     waitUntil: 'networkidle0',
     timeout: 60000
   });
